@@ -1,16 +1,9 @@
 name: GitHub Actions Demo
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Enter the name'
-        required: true
-        default: 'GitHub User'
-      deploy:
-        description: 'Deploy code after build (yes/no)'
-        required: false
-        default: 'yes'
+   push:
+    branches:
+      - actions-demo
 
 jobs:
   Example-Actions-Job:
