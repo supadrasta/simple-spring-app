@@ -7,16 +7,9 @@ on:
   push:
     branches:
       - actions-demo
-  
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    steps:     
-
+    steps:    
       - name: Bash shell commands
-        run: echo ${{ github.event_name }}
-        echo ${{ github.workspace }}
-        echo ${{ github.ref }}
-    
+        run: echo ${{ github.event_name}}
