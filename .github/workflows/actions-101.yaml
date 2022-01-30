@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:    
       - name: Bash shell commands
-        run: echo ${{ github.event_name}}
+        run: echo ${{ github.event_name}} ${{github.repository}} $${{github.ref}}
